@@ -1,0 +1,160 @@
+/* Common section styles */
+
+.section__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 36px;
+  color: $title-text-color;  
+}
+
+/* Features block styling */
+
+.features__block{
+  display: flex;
+  padding-top: 94px;
+}
+
+.feature__item {
+  width: 270px;
+
+  &:not(:last-child){
+    margin-right: 30px;
+  }
+}
+
+.feature__item--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:$secondary-bg-color;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+
+.feature__title {
+  font-size: 14px; 
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+
+.feature__description {
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Services block styling */
+
+.services__block {
+  padding: 94px 0;
+}
+    
+.services__list-item{
+  position: relative;
+
+  @extend .list;
+ 
+}
+
+.services__name {
+  width:370px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $primaty-wite-color;
+  text-align: center;
+  line-height: 16px;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0;
+  background: rgba(47, 48, 58, 0.8);
+
+  position: absolute;
+  bottom: 0;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+/* Team block styling */
+
+.team__block {
+  background-color: $secondary-bg-color;
+  padding: 94px 0;
+}
+
+.team-member {
+  width: 270px;
+  background:$primaty-wite-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  font-size: 0;  
+
+  .wrapper {
+    padding: 30px 32px;
+  }
+}
+
+.team-member p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 16;
+}
+
+.member-name {
+  font-weight: 500;
+  font-size: 16px;
+  color: $title-text-color;
+  margin-top: 0;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+/* Clients block styling */
+
+.clients__block {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client__logo{
+  height: 90px;
+  width: 170px;
+}
+
+.client__link{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  fill: currentColor;
+  color: $icon-main-color;
+  border: 1px solid $icon-main-color;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: $animation-duration $animation-timing-function;
+  transition-property: color, border;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}

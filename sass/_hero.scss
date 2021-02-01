@@ -1,0 +1,48 @@
+h1 {
+
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: $primaty-wite-color;
+  font-weight: 900;
+  font-size: 44px;
+  text-transform: uppercase;
+}
+
+
+.hero {
+  max-width: 1600px;
+  height: 600px;
+ 
+  padding: 200px 0;
+  margin: 0 auto;
+
+  background-color: $hero-bg-color;
+  background-image: linear-gradient( 
+      to right,
+      $gradient-hero-color-from,
+      $gradient-hero-color-from),
+      url(/img/bgimage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero--wrapper {
+  width: 696px;
+  text-align: center;
+  margin: 0 auto;
+} 
+
+
+.hero__button {
+  padding: 10px 32px;
+  min-width: 200px;
+
+  background-color: $accent-color;
+  color: $primaty-wite-color;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+
+  @extend .button;
+}

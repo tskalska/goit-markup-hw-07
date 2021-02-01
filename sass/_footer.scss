@@ -1,0 +1,104 @@
+/* footer styling  */
+
+footer {
+  background-color: $hero-footer-bg-color;
+  padding: 60px 0;
+
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
+} 
+
+.footer--wrapper {
+  margin-right: 70px;
+}
+
+.footer__logo {
+  color: $primaty-wite-color;
+  margin-bottom: 20px;
+  display: inline-block;
+
+  @extend .logo;
+}
+
+address {
+  font-style: normal;
+  font-weight: 400;
+  color: $primaty-wite-color;
+  letter-spacing: 0.03em;
+  margin-bottom: 9px;   
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  
+  &>:not(:last-child){
+    margin-bottom: 10px;
+  }
+}
+
+.footer__contacts a{
+  &:hover,
+  &:focus {
+    color: $accent-color; 
+  }
+
+  transition: color $animation-duration $animation-timing-function;
+}
+
+.footer__contacts--title {
+  font-size: 14px;
+  line-height: 16px;
+  color: $primaty-wite-color;
+  text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.subscribe__forme--wrapper {
+  margin-left: auto;
+}
+
+.subscribe__form {
+  display: flex;
+}
+
+.subscribe__form input{
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  color: $primaty-wite-color;
+  
+  &::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;}
+}
+
+.subscribe__button {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $accent-color;
+  padding-left: 29px;
+  padding-right: 29px;
+  color:$primaty-wite-color;
+  font-size: 16px;
+  font-weight: 700;
+
+  @extend .button;
+}
+
+.subscribe__button--text{
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
