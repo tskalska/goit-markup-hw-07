@@ -130,7 +130,7 @@
 .checkbox__input:checked + .checkbox__label::before {
   content:'';
   background-color: $accent-color;
-  background-image: url(../img/icon-check.svg);
+  background-image: url(../../img/icon-check.svg);
   background-origin:border-box;
   border-color: $accent-color;
 }
