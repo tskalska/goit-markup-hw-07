@@ -153,8 +153,8 @@ h1 {
   padding: 200px 0;
   margin: 0 auto;
   background-color: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/img/bgimage.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/bgimage.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/bgimage.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bgimage.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -913,7 +913,7 @@ address {
 .checkbox__input:checked + .checkbox__label::before {
   content: '';
   background-color: #2196F3;
-  background-image: url(/img/icon-check.svg);
+  background-image: url(../img/icon-check.svg);
   background-origin: border-box;
   border-color: #2196F3;
 }
