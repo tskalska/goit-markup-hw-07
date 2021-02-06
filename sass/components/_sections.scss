@@ -7,7 +7,7 @@
 
   font-weight: bold;
   font-size: 36px;
-  color: $title-text-color;  
+  color:  getColor('title-text');  
 }
 
 /* Features block styling */
@@ -29,7 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:$secondary-bg-color;
+  background-color: getColor('secondary-bg');
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -42,7 +42,7 @@
   margin-bottom: 10px;
   font-weight: bold;
   text-transform: uppercase;
-  color: $title-text-color;
+  color:  getColor('title-text');
 }
 
 .feature__description {
@@ -69,7 +69,7 @@
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  color: $primaty-wite-color;
+  color:  getColor('wite-primary');
   text-align: center;
   line-height: 16px;
 
@@ -89,13 +89,13 @@
 /* Team block styling */
 
 .team__block {
-  background-color: $secondary-bg-color;
+  background-color:  getColor('secondary-bg');
   padding: 94px 0;
 }
 
 .team-member {
   width: 270px;
-  background:$primaty-wite-color;
+  background: getColor('wite-primary');
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
@@ -116,7 +116,7 @@
 .member-name {
   font-weight: 500;
   font-size: 16px;
-  color: $title-text-color;
+  color:  getColor('title-text');
   margin-top: 0;
   margin-bottom: 10px;
   display: block;
@@ -144,17 +144,17 @@
   width: 100%;
 
   fill: currentColor;
-  color: $icon-main-color;
-  border: 1px solid $icon-main-color;
+  color:  getColor('icon-main');
+  border: 1px solid  getColor('icon-main');
   border-radius: 4px;
   cursor: pointer;
 
-  transition: $animation-duration $animation-timing-function;
+  transition:  makeAnimation('duration')  makeAnimation('timing-function');
   transition-property: color, border;
 
   &:hover,
   &:focus {
-    color: $accent-color;
-    border: 1px solid $accent-color;
+    color:  getColor('accent');
+    border: 1px solid  getColor('accent');
   }
 }

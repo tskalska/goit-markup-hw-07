@@ -30,19 +30,19 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: border $animation-duration $animation-timing-function;
+  transition: border  makeAnimation( 'duration')  makeAnimation('timing-function');
 
   &:hover,
   &:focus {
-    fill: $accent-color;
-    border: 1px solid $accent-color;
+    fill:  getColor('accent');
+    border: 1px solid  getColor('accent');
     outline: none;
   }
 }
 
 .form__input:hover + .input__icon, 
 .form__input:focus + .input__icon {
-  fill: $accent-color;
+  fill:  getColor('accent');
 }
 
 .input__icon{
@@ -51,7 +51,7 @@
   left:12px;
 
   transform: translateY(-50%);
-  transition: fill $animation-duration $animation-timing-function;
+  transition: fill  makeAnimation('duration')  makeAnimation('timing-function');
 }
 
 .comment__textarea {
@@ -60,7 +60,7 @@
   padding: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border $animation-duration $animation-timing-function;
+  transition: border  makeAnimation('duration')  makeAnimation('timing-function');
 
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
@@ -68,7 +68,7 @@
 
   &:hover,
   &:focus{
-    border: 1px solid $accent-color;
+    border: 1px solid  getColor('accent');
     outline: none;
   }
 }
@@ -77,7 +77,7 @@
   margin: 0;
   font-size: 12px;
   line-height: 14px;
-  color: $primary-text-color; 
+  color: getColor('text-primary'); 
 }
 
 .form__field--wrapper {
@@ -117,40 +117,49 @@
     content: '';
     width: 16px;
     height: 15px;
-    border:2px solid $title-text-color;
+    border:2px solid  getColor('title-text');
     border-radius: 2px;
     margin-right: 7px;
   }
 }
 
+.checkbox__label span {
+font-family: Roboto;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: getColor('text-primary');
+}
+
+
 .checkbox__input:focus + .checkbox__label::before {
-  border: 2px solid $accent-color;
+  border: 2px solid   getColor('accent');
 }
 
 .checkbox__input:checked + .checkbox__label::before {
   content:'';
-  background-color: $accent-color;
+  background-color:   getColor('accent');
   background-image: url(../../img/icon-check.svg);
   background-origin:border-box;
-  border-color: $accent-color;
+  border-color: getColor('accent');
 }
 
 .policy__link {
-  color: $accent-color;
+  color:  getColor('accent');
   text-decoration: underline;
 }
 
 .submit__button {
   width: 200px;
   height: 50px;
-  color: $primaty-wite-color;
-  background: $accent-color;
+  color:  getColor('wite-primary');
+  background:  getColor('accent');
   margin: 0 auto 0;
 
   font-size: 16px;
   line-height: 30px;
   font-weight: 700;
-  transition: box-shadow $animation-duration $animation-timing-function;
+  transition: box-shadow  makeAnimation( 'duration')  makeAnimation('timing-function');
 
   &:hover,
   &:focus {

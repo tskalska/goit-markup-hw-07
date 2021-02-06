@@ -8,7 +8,7 @@
 
 .site-nav .current-page,
 .accent-color {
-    color:$accent-color;
+    color:  getColor('accent');
 }
 
 nav {
@@ -31,17 +31,18 @@ nav {
   padding-bottom: 32px;
   display: inline-block;
   
-  transition: color $animation-duration $animation-timing-function;
+  transition: color  makeAnimation('duration')  makeAnimation('timing-function');
 
   &:hover,
   &:focus{
-    color: $accent-color;
+    color:  getColor('accent');
   }
-  }
+}
+  
 
 
 .site-nav__link {
-    color: $title-text-color;
+    color:  getColor('title-text');
     position: relative;
     
     &::after {
@@ -55,15 +56,16 @@ nav {
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color:$accent-color; 
+    background-color:  getColor('accent'); 
     opacity: 0;
 
-    transition: opacity $animation-duration $animation-timing-function;
+    transition: opacity  makeAnimation( 'duration')  makeAnimation('timing-function');
   }  
 }
 
 .current-page,
-.site-nav__link:hover{
+.site-nav__link:hover,
+.site-nav__link:focus{
   &::after{
     opacity: 1;
   }
@@ -73,7 +75,7 @@ nav {
 
 .contacts {
   margin-left: auto;
-  color: $primary-text-color;
+  color: getColor('text-primary');
 
   &__link{
     display: inline-flex;

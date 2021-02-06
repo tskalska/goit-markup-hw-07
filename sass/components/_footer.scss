@@ -1,7 +1,7 @@
 /* footer styling  */
 
 footer {
-  background-color: $hero-footer-bg-color;
+  background-color:  getColor('hero-footer-bg');
   padding: 60px 0;
 
   .container {
@@ -15,7 +15,7 @@ footer {
 }
 
 .footer__logo {
-  color: $primaty-wite-color;
+  color:  getColor('wite-primary');
   margin-bottom: 20px;
   display: inline-block;
 
@@ -25,7 +25,7 @@ footer {
 address {
   font-style: normal;
   font-weight: 400;
-  color: $primaty-wite-color;
+  color:  getColor('wite-primary');
   letter-spacing: 0.03em;
   margin-bottom: 9px;   
 }
@@ -42,16 +42,16 @@ address {
 .footer__contacts a{
   &:hover,
   &:focus {
-    color: $accent-color; 
+    color:   getColor('accent'); 
   }
 
-  transition: color $animation-duration $animation-timing-function;
+  transition: color  makeAnimation('duration')  makeAnimation('timing-function');
 }
 
 .footer__contacts--title {
   font-size: 14px;
   line-height: 16px;
-  color: $primaty-wite-color;
+  color:  getColor('wite-primary');
   text-transform: uppercase;
 
   margin-top: 0;
@@ -74,7 +74,7 @@ address {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0);
-  color: $primaty-wite-color;
+  color:  getColor('wite-primary');
   
   &::placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -86,10 +86,10 @@ address {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: $accent-color;
+  background-color:   getColor('accent');
   padding-left: 29px;
   padding-right: 29px;
-  color:$primaty-wite-color;
+  color: getColor('wite-primary');
   font-size: 16px;
   font-weight: 700;
 
